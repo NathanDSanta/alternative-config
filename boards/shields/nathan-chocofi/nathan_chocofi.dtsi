@@ -45,7 +45,7 @@
   //physical layout and kscan selection
   chosen {
     zmk,kscan = &kscan0;
-    zmk,physical-layout = &physical-layout; 
+    zmk,physical-layout = &foostan_corne_5col_layout; 
   };
 };
 
