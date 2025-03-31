@@ -6,7 +6,7 @@
 #include <layouts/foostan/corne/5column.dtsi>
 
 &foostan_corne_5col_layout {
-  transform = <&default_transform>
+  transform = <&default_transform>;
 };
 
 // Row pins definition for both halves
