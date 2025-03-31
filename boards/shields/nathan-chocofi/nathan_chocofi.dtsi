@@ -7,7 +7,7 @@
 
 &foostan_corne_5col_layout {
   transform = <&default_transform>
-}
+};
 
 // Row pins definition for both halves
 / {
