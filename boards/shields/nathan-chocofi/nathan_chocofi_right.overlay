@@ -2,7 +2,7 @@
 *  Right Half .overlay configuration file
 */
 
-#include "corne.dtsi"
+#include "nathan_chocofi.dtsi"
 
 // Column pin definitions
 &kscan0 {
