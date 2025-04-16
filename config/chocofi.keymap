@@ -134,6 +134,8 @@
   &kp Z            &kp X            &kp C          &kp V         &kp B          &kp K        &kp M         &kp COMMA           &kp DOT           &kp FSLH
                                     &kp ESC        &lt 3 TAB     &lt 2 SPACE    &lt 4 ENTER  &kp BSPC      &kp DEL
             >;
+
+            label = "Base (CLK)";
         };
 
         qwerty {
@@ -149,6 +151,8 @@
   &kp Z        &kp X        &kp C          &kp V         &kp B          &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH
                             &kp ESC        &lt 3 TAB     &lt 2 SPACE    &lt 4 ENTER  &kp BSPC      &kp DEL
             >;
+
+            label = "Base (QWTY)";
         };
 
         numsym {
@@ -164,6 +168,8 @@
   &kp F11       &kp GRAVE         &kp MINUS       &kp EQUAL      &kp PLUS    &kp MINUS     &kp SQT        &kp SEMICOLON   &kp BACKSLASH  &kp F12
                                   &none           &none          &none       &parenthesis  &brackets      &braces
             >;
+
+            label = "NumSym";
         };
 
         settingsAndMouse {
@@ -173,6 +179,8 @@
   &bootloader  &studio_unlock  &kp CAPS   &kp PRINTSCREEN  &out OUT_TOG     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3          &bt BT_SEL 4
                                &none      &none            &none            &mkp LCLK     &mkp MCLK     &mkp RCLK
             >;
+
+            label = "ConfMouse";
         };
 
         nav {
@@ -182,6 +190,8 @@
   &trans           &trans        &trans          &trans     &trans       &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
                                  &trans          &trans     &trans       &none     &none          &none
             >;
+
+            label = "Nav";
         };
     };
 };
