@@ -130,12 +130,12 @@
 
             bindings = <
   &kp Q            &kp W            &kp F          &kp P         &kp G          &kp J        &kp L         &kp U               &kp Y             &kp SEMI
-  &HML LEFT_ALT A  &HML LEFT_GUI R  &HML LSHIFT S  &HML LCTRL T  &kp D          &kp H        &HMR RCTRL N  &HMR RIGHT_SHIFT E  &HMR RIGHT_GUI I  &HMR RALT O
+  &HML LEFT_ALT A  &HML LEFT_GUI R  &HML LSHIFT S  &HML LCTRL T  &kp D          &kp H        &HMR RCTRL N  &HMR RIGHT_SHIFT E  &HMR RIGHT_GUI I  &HMR LEFT_ALT O
   &kp Z            &kp X            &kp C          &kp V         &kp B          &kp K        &kp M         &kp COMMA           &kp DOT           &kp FSLH
                                     &kp ESC        &lt 3 TAB     &lt 2 SPACE    &lt 4 ENTER  &kp BSPC      &kp DEL
             >;
 
-            label = "Base (CLK)";
+            label = "Colemak";
         };
 
         qwerty {
@@ -152,7 +152,7 @@
                             &kp ESC        &lt 3 TAB     &lt 2 SPACE    &lt 4 ENTER  &kp BSPC      &kp DEL
             >;
 
-            label = "Base (QWTY)";
+            label = "Qwerty";
         };
 
         numsym {
@@ -172,23 +172,23 @@
             label = "NumSym";
         };
 
-        settingsAndMouse {
+        Conf {
             bindings = <
-  &kp LC(Z)    &kp LC(X)       &kp LC(C)  &kp LC(V)        &kp LC(LS(Z))    &kp C_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-  &kp LALT     &kp LEFT_GUI    &kp LCTRL  &kp LSHFT        &kp LC(Y)        &mouseLeft    &mouseDown    &mouseUp         &mouseRight           &bt BT_CLR
-  &bootloader  &studio_unlock  &kp CAPS   &kp PRINTSCREEN  &out OUT_TOG     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3          &bt BT_SEL 4
-                               &none      &none            &none            &mkp LCLK     &mkp MCLK     &mkp RCLK
+  &kp LC(Y)        &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp C_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+  &kp LALT         &kp LEFT_GUI  &kp LCTRL  &kp LSHFT  &kp LC(LS(Z))    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3          &bt BT_SEL 4
+  &kp LS(LC(TAB))  &kp LC(TAB)   &kp LC(W)  &kp LC(T)  &kp LC(N)        &bt BT_CLR    &out OUT_TOG  &kp CAPSLOCK     &kp PRINTSCREEN       &bootloader
+                                 &none      &none      &none            &mkp LCLK     &mkp MCLK     &mkp RCLK
             >;
 
-            label = "ConfMouse";
+            label = "Conf";
         };
 
         nav {
             bindings = <
-  &kp LC(LS(TAB))  &kp LC(TAB)   &kp LC(W)       &kp LC(T)  &kp LC(N)    &trans    &trans         &trans       &trans     &trans
-  &kp LEFT_ALT     &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &trans       &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-  &trans           &trans        &trans          &trans     &trans       &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-                                 &trans          &trans     &trans       &none     &none          &none
+  &studio_unlock  &trans        &trans          &trans     &trans       &mouseLeft  &mouseDown     &mouseUp     &mouseRight  &trans
+  &kp LEFT_ALT    &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &trans       &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT    &trans
+  &trans          &trans        &trans          &trans     &trans       &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END      &trans
+                                &mkp RCLK       &mkp MCLK  &mkp LCLK    &none       &none          &none
             >;
 
             label = "Nav";
