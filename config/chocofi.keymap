@@ -15,15 +15,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        toggleQwerty {
-            bindings = <&tog 1>;
-            key-positions = <0 13 8>;
-            layers = <0 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         HML: HML {
@@ -176,7 +168,7 @@
             bindings = <
   &kp LC(Y)        &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp C_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
   &kp LALT         &kp LEFT_GUI  &kp LCTRL  &kp LSHFT  &kp LC(LS(Z))    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3          &bt BT_SEL 4
-  &kp LS(LC(TAB))  &kp LC(TAB)   &kp LC(W)  &kp LC(T)  &kp LC(N)        &bt BT_CLR    &out OUT_TOG  &kp CAPSLOCK     &kp PRINTSCREEN       &bootloader
+  &kp LS(LC(TAB))  &kp LC(TAB)   &kp LC(W)  &kp LC(T)  &kp LC(N)        &bt BT_CLR    &out OUT_TOG  &kp CAPSLOCK     &kp PRINTSCREEN       &trans
                                  &none      &none      &none            &mkp LCLK     &mkp MCLK     &mkp RCLK
             >;
 
@@ -185,13 +177,35 @@
 
         nav {
             bindings = <
-  &studio_unlock  &trans        &trans          &trans     &trans       &mouseLeft  &mouseDown     &mouseUp     &mouseRight  &trans
-  &kp LEFT_ALT    &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &trans       &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT    &trans
-  &trans          &trans        &trans          &trans     &trans       &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END      &trans
-                                &mkp RCLK       &mkp MCLK  &mkp LCLK    &none       &none          &none
+  &studio_unlock  &bootloader   &trans          &trans     &tog 1       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+  &kp LEFT_ALT    &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &tog 5       &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &trans
+  &trans          &trans        &trans          &trans     &trans       &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+                                &mkp RCLK       &mkp MCLK  &mkp LCLK    &none           &none           &none
             >;
 
             label = "Nav";
+        };
+
+        Game {
+            bindings = <
+  &kp F3     &kp Q  &kp W    &kp E    &kp R          &none  &none  &none  &none  &none
+  &kp LSHFT  &kp A  &kp S    &kp D    &kp F          &none  &none  &none  &none  &none
+  &kp LCTRL  &kp Z  &kp X    &kp C    &kp V          &none  &none  &none  &none  &none
+                    &kp ESC  &kp TAB  &lt 6 SPACE    &none  &none  &none
+            >;
+
+            label = "Gaming";
+        };
+
+        Game2 {
+            bindings = <
+  &kp F5     &kp T   &kp B   &kp N   &kp M     &trans  &trans  &trans  &trans  &trans
+  &kp ENTER  &kp N1  &kp N2  &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans
+  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                     &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "GameNum";
         };
     };
 };
