@@ -188,10 +188,10 @@
 
         Game {
             bindings = <
-  &kp F3     &kp Q  &kp W    &kp E    &kp R          &none  &none  &none  &none  &none
-  &kp LSHFT  &kp A  &kp S    &kp D    &kp F          &none  &none  &none  &none  &none
-  &kp LCTRL  &kp Z  &kp X    &kp C    &kp V          &none  &none  &none  &none  &none
-                    &kp ESC  &kp TAB  &lt 6 SPACE    &none  &none  &none
+  &kp F3     &kp Q  &kp W    &kp E    &kp R          &none   &none  &none  &none  &none
+  &kp LSHFT  &kp A  &kp S    &kp D    &kp F          &none   &none  &none  &none  &none
+  &kp LCTRL  &kp Z  &kp X    &kp C    &kp V          &none   &none  &none  &none  &none
+                    &kp ESC  &kp TAB  &lt 6 SPACE    &tog 5  &none  &none
             >;
 
             label = "Gaming";
