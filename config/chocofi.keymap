@@ -111,7 +111,7 @@
             bindings = <&HML LALT N1>, <&HML LALT F1>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF2: NumberF2 {
@@ -120,7 +120,7 @@
             bindings = <&HML LGUI N2>, <&HML LGUI F2>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF3: NumberF3 {
@@ -129,7 +129,7 @@
             bindings = <&HML LSHIFT N3>, <&HML LSHIFT F3>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF4: NumberF4 {
@@ -138,7 +138,7 @@
             bindings = <&HML LCTRL N4>, <&HML LCTRL F4>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF5: NumberF5 {
@@ -147,7 +147,7 @@
             bindings = <&HML RALT N5>, <&HML RALT F5>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF6: NumberF6 {
@@ -156,7 +156,7 @@
             bindings = <&HMR RALT N6>, <&HMR RALT F6>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF7: NumberF7 {
@@ -165,7 +165,7 @@
             bindings = <&HMR RCTRL N7>, <&HMR RCTRL F7>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF8: NumberF8 {
@@ -174,7 +174,7 @@
             bindings = <&HMR RSHIFT N8>, <&HMR RSHIFT F8>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF9: NumberF9 {
@@ -183,7 +183,7 @@
             bindings = <&HMR RGUI N9>, <&HMR RGUI F9>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         NumberF10: NumberF10 {
@@ -192,7 +192,7 @@
             bindings = <&HMR LEFT_ALT N0>, <&HMR LALT F10>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
     };
 
