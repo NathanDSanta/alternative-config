@@ -93,10 +93,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F    &kp P  &kp G        &kp J  &kp L       &kp U      &kp Y    &kp SEMI
-  &kp A  &kp R  &kp S    &kp T  &kp D        &kp H  &kp N       &kp E      &kp I    &kp O
-  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp K  &kp M       &kp COMMA  &kp DOT  &kp FSLH
-                &kp ESC  &mo 2  &kp SPACE    &mo 1  &kp LSHIFT  &kp DEL
+  &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J  &kp L       &kp U      &kp Y    &kp SEMI
+  &kp A  &kp R  &kp S  &kp T  &kp D        &kp H  &kp N       &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K  &kp M       &kp COMMA  &kp DOT  &kp FSLH
+                &mo 3  &mo 2  &kp SPACE    &mo 1  &kp LSHIFT  &kp LCTRL
             >;
 
             label = "Colemak";
@@ -104,10 +104,10 @@
 
         Mods-Nav {
             bindings = <
-  &trans    &trans        &trans          &trans     &trans      &trans    &trans     &kp BACKSPACE  &kp DEL    &trans
-  &sk LALT  &sk LEFT_WIN  &sk LEFT_SHIFT  &sk LCTRL  &sk RALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
-  &trans    &trans        &trans          &trans     &trans      &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &trans
-                          &none           &mo 3      &mo 2       &trans    &trans     &trans
+  &kp LS(X)  &kp LC(LS(C))  &kp LC(C)       &kp LC(V)   &kp LS(INSERT)    &caps_word  &kp CAPSLOCK  &kp BACKSPACE  &kp DEL    &kp INSERT
+  &sk LALT   &sk LEFT_WIN   &sk LEFT_SHIFT  &sk LCTRL   &sk RALT          &kp LEFT    &kp DOWN      &kp UP         &kp RIGHT  &kp ENTER
+  &trans     &trans         &trans          &trans      &trans            &kp HOME    &kp PG_DN     &kp PG_UP      &kp END    &kp PRINTSCREEN
+                            &trans          &kp ESCAPE  &kp TAB           &trans      &trans        &trans
             >;
 
             label = "Mods-Nav";
@@ -132,10 +132,10 @@
 
         Fun-Conf {
             bindings = <
-  &kp F1           &kp F2       &kp F3         &kp F4     &kp F5       &kp F6        &kp F7        &kp F8          &kp F9        &kp F10
-  &kp F11          &kp F12      &trans         &trans     &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
-  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LC(LS(T))  &kp LC(T)  &kp LC(N)    &out OUT_BLE  &out OUT_USB  &studio_unlock  &bootloader   &bt BT_CLR
-                                &none          &none      &none        &none         &none         &none
+  &kp F1   &kp F2   &kp F3             &kp F4        &kp F5                   &kp F6        &kp F7        &kp F8          &kp F9        &kp F10
+  &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_MUTE               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
+  &trans   &trans   &kp C_BRI_DEC      &kp C_BRI_UP  &kp C_BRIGHTNESS_AUTO    &out OUT_BLE  &out OUT_USB  &studio_unlock  &bootloader   &bt BT_CLR
+                    &none              &none         &none                    &none         &none         &none
             >;
 
             label = "Fun-Conf";
