@@ -210,27 +210,10 @@
   &kp Q            &kp W            &kp F          &kp P         &kp G          &kp J        &kp L         &kp U               &kp Y             &kp SEMI
   &HML LEFT_ALT A  &HML LEFT_GUI R  &HML LSHIFT S  &HML LCTRL T  &HML RALT D    &HMR RALT H  &HMR RCTRL N  &HMR RIGHT_SHIFT E  &HMR RIGHT_GUI I  &HMR LEFT_ALT O
   &kp Z            &kp X            &kp C          &kp V         &kp B          &kp K        &kp M         &kp COMMA           &kp DOT           &kp FSLH
-                                    &kp ESC        &lt 3 TAB     &lt 2 SPACE    &lt 4 ENTER  &kp BSPC      &kp DEL
+                                    &kp ESC        &lt 2 TAB     &lt 1 SPACE    &lt 3 ENTER  &kp BSPC      &kp DEL
             >;
 
             label = "Colemak";
-        };
-
-        qwerty {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-  &kp Q        &kp W        &kp E          &kp R         &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
-  &HML LALT A  &HML LGUI S  &HML LSHIFT D  &HML LCTRL F  &HML RALT G    &HMR RALT H  &HMR RCTRL J  &HMR RSHFT K  &HMR RGUI L  &HMR LALT SEMICOLON
-  &kp Z        &kp X        &kp C          &kp V         &kp B          &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                            &kp ESC        &lt 3 TAB     &lt 2 SPACE    &lt 4 ENTER  &kp BSPC      &kp DEL
-            >;
-
-            label = "Qwerty";
         };
 
         numsym {
@@ -243,7 +226,7 @@
             bindings = <
   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp EQUAL      &kp SQT
   &NumberF1        &NumberF2    &NumberF3  &NumberF4   &NumberF5      &NumberF6     &NumberF7      &NumberF8     &NumberF9      &NumberF10
-  &kp F11          &trans       &trans     &kp GRAVE   &kp PLUS       &kp MINUS     &kp TILDE      &trans        &kp BACKSLASH  &kp F12
+  &kp F11          &trans       &kp TILDE  &kp GRAVE   &kp PLUS       &kp MINUS     &trans         &trans        &kp BACKSLASH  &kp F12
                                 &none      &none       &none          &parenthesis  &braces        &brackets
             >;
 
@@ -263,8 +246,8 @@
 
         nav {
             bindings = <
-  &studio_unlock  &bootloader   &trans          &trans     &tog 1       &mouseLeft  &mouseDown     &mouseUp     &mouseRight  &trans
-  &kp LEFT_ALT    &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &tog 5       &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT    &trans
+  &studio_unlock  &bootloader   &trans          &trans     &trans       &mouseLeft  &mouseDown     &mouseUp     &mouseRight  &trans
+  &kp LEFT_ALT    &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &tog 4       &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT    &trans
   &bt BT_CLR      &trans        &trans          &trans     &trans       &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END      &trans
                                 &mkp RCLK       &mkp MCLK  &mkp LCLK    &none       &none          &none
             >;
@@ -277,7 +260,7 @@
   &kp F3     &kp Q  &kp W    &kp E    &kp R          &none   &none  &none  &none  &none
   &kp LSHFT  &kp A  &kp S    &kp D    &kp F          &none   &none  &none  &none  &none
   &kp LCTRL  &kp Z  &kp X    &kp C    &kp V          &none   &none  &none  &none  &none
-                    &kp ESC  &kp TAB  &lt 6 SPACE    &tog 5  &none  &none
+                    &kp ESC  &kp TAB  &lt 5 SPACE    &tog 4  &none  &none
             >;
 
             label = "Gaming";
