@@ -53,10 +53,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp EXCL   &kp AT            &kp HASH          &kp DOLLAR            &kp PERCENT     &kp CARET  &kp AMPERSAND          &kp ASTERISK     &kp EQUAL          &kp APOS
-  &kp N1     &kp N2            &kp N3            &kp N4                &kp N5          &kp N6     &kp N7                 &kp N8           &kp N9             &kp N0
-  &kp GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp PLUS        &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH
-                               &kp LEFT_CONTROL  &kp LSHIFT            &kp LEFT_GUI    &none      &none                  &none
+  &kp EXCL   &kp AT            &kp HASH          &kp DOLLAR            &kp PERCENT    &kp CARET  &kp AMPERSAND          &kp ASTERISK     &kp EQUAL          &kp APOS
+  &kp N1     &kp N2            &kp N3            &kp N4                &kp N5         &kp N6     &kp N7                 &kp N8           &kp N9             &kp N0
+  &kp GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp PLUS       &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH
+                               &kp LEFT_CONTROL  &kp LSHIFT            &kp SPACE      &none      &none                  &none
             >;
 
             label = "Num";
@@ -95,7 +95,7 @@
         Maincra2 {
             bindings = <
   &kp O    &kp I      &kp U   &kp Y   &kp T     &trans  &trans  &trans  &trans  &trans
-  &kp L    &kp K      &kp J   &kp H   &kp G     &trans  &trans  &trans  &trans  &trans
+  &kp TAB  &kp K      &kp J   &kp H   &kp G     &trans  &trans  &trans  &trans  &trans
   &kp DOT  &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans
                       &kp F3  &trans  &kp F5    &trans  &trans  &trans
             >;
